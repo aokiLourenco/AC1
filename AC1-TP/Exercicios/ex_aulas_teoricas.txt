@@ -1,0 +1,38 @@
+1. CPU, memória, I/O
+
+2. ALU, Control Unit, Registos Internos
+
+3. Guardar  o endereço da próx intrução a ser executada
+
+4. Compilador passa o c;odigo de alto nível a Assembly
+
+5. Passa de Assembly para código máquina
+
+6. 32
+
+7. 32 bits
+
+8. addi/addu/sub
+
+9. srl é signed e sra é unsigned
+
+10. a) 1000 0001 0011 0101 0100 1010 1011 0011
+       0100 0000 1001 1010 1010 0101 0101 1001
+       $3 = 0x409AA559
+       
+    b) 1000 0001 0011 0101 0100 1010 1011 0011
+       1100 0000 1001 1010 1010 0101 0101 1001
+       $4 = 0xC09AA559
+
+11. a) Um System call é uma chamada a uma função
+ do sistema que permite realizar operações no CPU
+    b) $v0
+    c) $a0-$a3 & $f12($f13)-$f14($f15)
+    d) $v0 ou $f0
+
+12. O endereço é o identificador único para uma posição de memória
+
+13. É o conjunto de todos os endereços que o processador pode
+ aceder para ler/escrever
+
+14. 
