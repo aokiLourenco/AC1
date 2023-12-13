@@ -2,9 +2,9 @@
    
    .eqv N, 35
    
-lista:	.space	140
-
-lista2:	.space	140
+lista:	.space	35
+	.align 2
+lista2:	.space	35
 
    .eqv print_int10, 1
    .eqv read_int, 5
@@ -48,7 +48,9 @@ else: addi   $t0, $t0, 1
       j   for2
 
       la   $t3, lista2
-      addu $t7, $t3, $t1  
+      addu $t7, $t3, $t1 
+      
+      j	for2
 
 for3: bge   $t2, $t7, endf3
       move   $a0, $t6
