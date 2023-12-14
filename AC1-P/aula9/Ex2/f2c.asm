@@ -13,7 +13,7 @@ f2c:					# double f2c(double ft) {
 	l.d	$f4, 0($t0)		#	$f4 = 9
 	
 	la	$t0, x2			#	$t0 = $x2
-	l.d	$f6, 0($t0)		#	$f4 = 32
+	l.d	$f6, 0($t0)		#	$f6 = 32
 	
 	sub.d	$f12, $f12, $f6		#	ft - 32.0
 	div.d	$f2, $f2, $f4		#	$f2 = 5.0/9.0
