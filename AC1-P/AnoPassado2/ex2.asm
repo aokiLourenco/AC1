@@ -26,27 +26,27 @@ proc:	la	$t0, x0
 	
 for:	bge	$t0, $t2, endfor
 	
-	sll	$t0, $t0, 2
-	addu	$t1, $t1, $t0
+	sll	$t7, $t0, 2
+	addu	$t7, $t1, $t7
 	
-	l.d	$f6, 0($t1)
+	l.d	$f6, 0($t7)
 	add.d	$f6, $f6, $f4
 	
 if:	c.le.d 	$f6, $f2
 	bc1t	else
 	
-	s.d	$f4, 0($t1)
+	s.d	$f4, 0($t7)
 	add.d	$f8, $f8, $f4
 	
-	j	endfor
+	j	endif
 	
-else:	s.d	$f6, 0($t1)
+else:	s.d	$f6, 0($t7)
 	add.d	$f8, $f8, $f6
 	
-endfor:	addi	$t0, $t0, 1
+endif:	addi	$t0, $t0, 1
 	j	for
 	
-	mtc1	$t2, $f10
+endfor:	mtc1	$t2, $f10
 	cvt.d.w	$f10, $f10
 	
 	div.d	$f0, $f8, $f10
