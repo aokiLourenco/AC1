@@ -23,3 +23,12 @@ int func2(int *fl, int k, char *av[])
     }
     return res;
 }
+
+/*
+# Mapa de registos
+# fl:
+# k:
+# av:
+# i:
+# res:
+*/
