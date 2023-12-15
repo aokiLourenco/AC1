@@ -38,7 +38,7 @@ if:	move	$a0, $s0
 	addi	$s0, $s0, 1
 	j	for	
 
-endfor: add	$t5, $t3, $t4		# $t5 = p + npr
+endfor: 	add	$t5, $t3, $t4		# $t5 = p + npr
 	sw	$t3, 0($t5)
 	move	$v0, $t3
 	
